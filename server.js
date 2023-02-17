@@ -19,11 +19,16 @@ app.get('/', (req, res) => {
     res.sendFile(path.join(__dirname + 'index.html'));
 });
 
+app.get('*', (req, res) => {
+    res.sendFile(path.join(__dirname, './public/index.html'));
+});
+
 
 //create ROUTE GET /notes should return the notes.html file.
 app.get('/notes', (req, res) => {
     res.sendFile(path.join(__dirname + '/public/notes.html'));
 });
+
 
 
 //set up listen for port
