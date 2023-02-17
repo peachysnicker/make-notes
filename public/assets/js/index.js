@@ -50,6 +50,18 @@ const deleteNote = (id) =>
     },
   });
 
+  // //ADDED create a new note object from input values
+  // const newNote = {
+  //   title: noteTitle.value.trim(),
+  //   text: noteText.value.trim(),
+  // };
+
+  // //ADDED call our newNote method to make apost request with newNote object
+  // postNote(newNote)
+  // .then((data) => alert(`New note added!`))
+  // .catch((err) => console.error(err));
+
+
 const renderActiveNote = () => {
   hide(saveNoteBtn);
 
